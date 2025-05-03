@@ -13,3 +13,8 @@
       name: nodejs
       state: present
     
+  - name: useradd roboshop
+    ansible.builtin.user:
+      name: roboshop
+
+  -
