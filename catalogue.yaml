@@ -1,5 +1,5 @@
 - name: catalogue
-  hosts: catalogue
+  hosts: localhost
   become: yes
   tasks:
   - name: disable old nodejs
