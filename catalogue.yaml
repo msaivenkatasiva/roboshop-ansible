@@ -43,7 +43,7 @@
       src: catalogue.service
       dest: /etc/systemd/system/catalogue.service
 
-  - name: deamon reload ans start
+  - name: deamon reload and start
     ansible.builtin.systemd_service:
       deamon_reload: true
 
@@ -56,4 +56,4 @@
     ansible.builtin.package:
       name: mongodb-org-shell
       state: present
-      
+
