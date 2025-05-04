@@ -8,7 +8,9 @@
       dest: /
   
   - name: enable redis
-    ansible.builtin.shell: dnf module enable redis:remi-6.2 -y
+    ansible.builtin.service:
+      name: redis
+      enabled: yes
     
 
   - name: install redis
