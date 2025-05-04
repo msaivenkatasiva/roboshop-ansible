@@ -62,9 +62,9 @@
       name: mongodb-org-shell
       state: present
 
-  - name: get the users count
-    ansible.builtin.command: mongo --host mongodb.devopswithmsvs.uno --quiet --eval 'db = db.getSiblingDB("users"); db.users.count()'
-    register: user_count
+  #- name: get the users count
+   # ansible.builtin.command: mongo --host mongodb.devopswithmsvs.uno --quiet --eval 'db = db.getSiblingDB("users"); db.users.count()'
+    #register: user_count
 
   - name: load user date
     ansible.builtin.command: mongo --host mongodb.devopswithmsvs.uno < /app/schema/user.js
