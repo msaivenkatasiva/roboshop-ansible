@@ -10,7 +10,7 @@
 
   - name: install nodejs
     ansible.builtin.package:
-      name: cart
+      name: nodejs
       state: present
 
   - name: useradd roboshop
