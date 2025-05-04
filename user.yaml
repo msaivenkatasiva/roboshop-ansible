@@ -66,9 +66,9 @@
    # ansible.builtin.command: mongo --host mongodb.devopswithmsvs.uno --quiet --eval 'db = db.getSiblingDB("users"); db.users.count()'
     #register: user_count
 
-  - name: load user date
-    ansible.builtin.command: mongo --host mongodb.devopswithmsvs.uno < /app/schema/user.js
-    when: user_count.stdout == "0" # keep double quotes
+  #- name: load user date
+    #ansible.builtin.command: mongo --host mongodb.devopswithmsvs.uno < /app/schema/user.js
+   # when: user_count.stdout == "0" # keep double quotes
 
   - name: start and enable user
     ansible.builtin.service:
