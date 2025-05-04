@@ -9,7 +9,7 @@
   
   - name: enable redis
     ansible.builtin.service:
-      name: remi
+      name: remi-release
       enabled: yes
     
 
