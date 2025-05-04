@@ -4,7 +4,7 @@
   tasks:
   - name: install remi release
     ansible.builtin.dnf: # check pacakge will work not
-      name: install redis nano
+      name: dnf install redis nano
       state: present
       disable_gpg_check: true
   
